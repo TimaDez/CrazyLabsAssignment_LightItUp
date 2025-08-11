@@ -1,0 +1,1422 @@
+{
+  "uid": "ba1e77de",
+  "version": 1,
+  "player": {
+    "x": -17.5,
+    "y": -11.3
+  },
+  "jumps1Star": 5,
+  "jumps2Star": 3,
+  "blockData": [
+    {
+      "name": "SimpleBlock",
+      "position": {
+        "x": -22.67,
+        "y": -12.48
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Start",
+      "position": {
+        "x": -17.4,
+        "y": -15.67
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (2)",
+      "position": {
+        "x": -17.61,
+        "y": -9.59
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (3)",
+      "position": {
+        "x": -12.51,
+        "y": -6.54
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (4)",
+      "position": {
+        "x": -17.75,
+        "y": -3.88
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (5)",
+      "position": {
+        "x": -22.23,
+        "y": -1.26
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (6)",
+      "position": {
+        "x": -17.55,
+        "y": 1.84
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (7)",
+      "position": {
+        "x": -12.89,
+        "y": 5.57
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (8)",
+      "position": {
+        "x": -17.57,
+        "y": 9.17
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (9)",
+      "position": {
+        "x": -22.31,
+        "y": 12.23
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (10)",
+      "position": {
+        "x": -17.61,
+        "y": 15.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (11)",
+      "position": {
+        "x": -12.4000006,
+        "y": 18.09
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (12)",
+      "position": {
+        "x": -22.0,
+        "y": 23.8000011
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.5,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (13)",
+      "position": {
+        "x": -17.81,
+        "y": 21.1400013
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (14)",
+      "position": {
+        "x": -17.88,
+        "y": 26.42
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (15)",
+      "position": {
+        "x": -12.24,
+        "y": 29.52
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 0.0,
+        "y": 5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.5
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "SimpleBlock (16)",
+      "position": {
+        "x": -17.6,
+        "y": 48.48
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 0,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 2.99,
+        "y": 1.0
+      },
+      "polygonPoints": [],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": -5.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": true,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    }
+  ],
+  "wallData": [],
+  "starData": [
+    {
+      "x": -13.66,
+      "y": -7.51
+    },
+    {
+      "x": -21.58,
+      "y": 11.24
+    },
+    {
+      "x": -17.66,
+      "y": 49.45
+    }
+  ],
+  "noReviveZonesData": []
+}

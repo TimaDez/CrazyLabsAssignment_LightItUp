@@ -1,0 +1,1076 @@
+{
+  "uid": "5c32704",
+  "version": 1,
+  "player": {
+    "x": 103.7,
+    "y": 21.8
+  },
+  "jumps1Star": 5,
+  "jumps2Star": 3,
+  "blockData": [
+    {
+      "name": "Heart",
+      "position": {
+        "x": 54.8,
+        "y": -24.1
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 26.461998,
+        "y": 26.461998
+      },
+      "polygonPoints": [
+        {
+          "x": -0.2,
+          "y": 5.9
+        },
+        {
+          "x": 4.82900047,
+          "y": 10.9660015
+        },
+        {
+          "x": 9.869,
+          "y": 9.896001
+        },
+        {
+          "x": 12.8390007,
+          "y": 3.946001
+        },
+        {
+          "x": -0.180999756,
+          "y": -10.1139994
+        },
+        {
+          "x": -13.230999,
+          "y": 3.936001
+        },
+        {
+          "x": -10.1509991,
+          "y": 9.986001
+        },
+        {
+          "x": -5.20099926,
+          "y": 10.9260006
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Arrow",
+      "position": {
+        "x": 122.1,
+        "y": -24.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.7071068,
+        "w": 0.7071068,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 90.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 40.5600052,
+        "y": 40.5600052
+      },
+      "polygonPoints": [
+        {
+          "x": 1.1,
+          "y": 2.9
+        },
+        {
+          "x": 2.73999882,
+          "y": 3.010001
+        },
+        {
+          "x": 4.29999876,
+          "y": 2.34000087
+        },
+        {
+          "x": 4.74999857,
+          "y": 0.41000098
+        },
+        {
+          "x": 0.179998666,
+          "y": -5.609999
+        },
+        {
+          "x": -4.220001,
+          "y": 0.380000979
+        },
+        {
+          "x": -3.6400013,
+          "y": 2.320001
+        },
+        {
+          "x": -2.23000121,
+          "y": 3.090001
+        },
+        {
+          "x": -0.7000013,
+          "y": 2.960001
+        },
+        {
+          "x": -0.660001338,
+          "y": 15.920002
+        },
+        {
+          "x": -1.87000132,
+          "y": 17.3300018
+        },
+        {
+          "x": -1.94000137,
+          "y": 20.2500019
+        },
+        {
+          "x": 0.229998678,
+          "y": 18.420002
+        },
+        {
+          "x": 2.32999873,
+          "y": 20.2800026
+        },
+        {
+          "x": 2.33999872,
+          "y": 17.2500019
+        },
+        {
+          "x": 1.06999862,
+          "y": 15.7600012
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 5.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": -50.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Heart (1)",
+      "position": {
+        "x": 54.3,
+        "y": 14.6
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 26.461998,
+        "y": 26.461998
+      },
+      "polygonPoints": [
+        {
+          "x": -0.2,
+          "y": 5.9
+        },
+        {
+          "x": 4.82900047,
+          "y": 10.9660015
+        },
+        {
+          "x": 9.869,
+          "y": 9.896001
+        },
+        {
+          "x": 12.8390007,
+          "y": 3.946001
+        },
+        {
+          "x": -0.180999756,
+          "y": -10.1139994
+        },
+        {
+          "x": -13.230999,
+          "y": 3.936001
+        },
+        {
+          "x": -10.1509991,
+          "y": 9.986001
+        },
+        {
+          "x": -5.20099926,
+          "y": 10.9260006
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Heart (2)",
+      "position": {
+        "x": 145.4,
+        "y": -23.9
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 26.461998,
+        "y": 26.461998
+      },
+      "polygonPoints": [
+        {
+          "x": -0.2,
+          "y": 5.9
+        },
+        {
+          "x": 4.82900047,
+          "y": 10.9660015
+        },
+        {
+          "x": 9.869,
+          "y": 9.896001
+        },
+        {
+          "x": 12.8390007,
+          "y": 3.946001
+        },
+        {
+          "x": -0.180999756,
+          "y": -10.1139994
+        },
+        {
+          "x": -13.230999,
+          "y": 3.936001
+        },
+        {
+          "x": -10.1509991,
+          "y": 9.986001
+        },
+        {
+          "x": -5.20099926,
+          "y": 10.9260006
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Heart (3)",
+      "position": {
+        "x": 145.5,
+        "y": 14.8
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 26.461998,
+        "y": 26.461998
+      },
+      "polygonPoints": [
+        {
+          "x": -0.2,
+          "y": 5.9
+        },
+        {
+          "x": 4.82900047,
+          "y": 10.9660015
+        },
+        {
+          "x": 9.869,
+          "y": 9.896001
+        },
+        {
+          "x": 12.8390007,
+          "y": 3.946001
+        },
+        {
+          "x": -0.180999756,
+          "y": -10.1139994
+        },
+        {
+          "x": -13.230999,
+          "y": 3.936001
+        },
+        {
+          "x": -10.1509991,
+          "y": 9.986001
+        },
+        {
+          "x": -5.20099926,
+          "y": 10.9260006
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Arrow (1)",
+      "position": {
+        "x": 122.1,
+        "y": 15.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.7071068,
+        "w": 0.7071068,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 90.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 40.5600052,
+        "y": 40.5600052
+      },
+      "polygonPoints": [
+        {
+          "x": 1.1,
+          "y": 2.9
+        },
+        {
+          "x": 2.73999882,
+          "y": 3.010001
+        },
+        {
+          "x": 4.29999876,
+          "y": 2.34000087
+        },
+        {
+          "x": 4.74999857,
+          "y": 0.41000098
+        },
+        {
+          "x": 0.179998666,
+          "y": -5.609999
+        },
+        {
+          "x": -4.220001,
+          "y": 0.380000979
+        },
+        {
+          "x": -3.6400013,
+          "y": 2.320001
+        },
+        {
+          "x": -2.23000121,
+          "y": 3.090001
+        },
+        {
+          "x": -0.7000013,
+          "y": 2.960001
+        },
+        {
+          "x": -0.660001338,
+          "y": 15.920002
+        },
+        {
+          "x": -1.87000132,
+          "y": 17.3300018
+        },
+        {
+          "x": -1.94000137,
+          "y": 20.2500019
+        },
+        {
+          "x": 0.229998678,
+          "y": 18.420002
+        },
+        {
+          "x": 2.32999873,
+          "y": 20.2800026
+        },
+        {
+          "x": 2.33999872,
+          "y": 17.2500019
+        },
+        {
+          "x": 1.06999862,
+          "y": 15.7600012
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": 5.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": -50.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Arrow (2)",
+      "position": {
+        "x": 77.7,
+        "y": 15.6
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.7071068,
+        "w": 0.7071068,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 270.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 40.5600052,
+        "y": 40.5600052
+      },
+      "polygonPoints": [
+        {
+          "x": 1.1,
+          "y": 2.9
+        },
+        {
+          "x": 2.73999882,
+          "y": 3.010001
+        },
+        {
+          "x": 4.29999876,
+          "y": 2.34000087
+        },
+        {
+          "x": 4.74999857,
+          "y": 0.41000098
+        },
+        {
+          "x": 0.179998666,
+          "y": -5.609999
+        },
+        {
+          "x": -4.220001,
+          "y": 0.380000979
+        },
+        {
+          "x": -3.6400013,
+          "y": 2.320001
+        },
+        {
+          "x": -2.23000121,
+          "y": 3.090001
+        },
+        {
+          "x": -0.7000013,
+          "y": 2.960001
+        },
+        {
+          "x": -0.660001338,
+          "y": 15.920002
+        },
+        {
+          "x": -1.87000132,
+          "y": 17.3300018
+        },
+        {
+          "x": -1.94000137,
+          "y": 20.2500019
+        },
+        {
+          "x": 0.229998678,
+          "y": 18.420002
+        },
+        {
+          "x": 2.32999873,
+          "y": 20.2800026
+        },
+        {
+          "x": 2.33999872,
+          "y": 17.2500019
+        },
+        {
+          "x": 1.06999862,
+          "y": 15.7600012
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": -5.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": -50.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    },
+    {
+      "name": "Arrow (3)",
+      "position": {
+        "x": 77.7,
+        "y": -24.1999989
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.7071068,
+        "w": 0.7071068,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 270.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": true,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 40.5600052,
+        "y": 40.5600052
+      },
+      "polygonPoints": [
+        {
+          "x": 1.1,
+          "y": 2.9
+        },
+        {
+          "x": 2.73999882,
+          "y": 3.010001
+        },
+        {
+          "x": 4.29999876,
+          "y": 2.34000087
+        },
+        {
+          "x": 4.74999857,
+          "y": 0.41000098
+        },
+        {
+          "x": 0.179998666,
+          "y": -5.609999
+        },
+        {
+          "x": -4.220001,
+          "y": 0.380000979
+        },
+        {
+          "x": -3.6400013,
+          "y": 2.320001
+        },
+        {
+          "x": -2.23000121,
+          "y": 3.090001
+        },
+        {
+          "x": -0.7000013,
+          "y": 2.960001
+        },
+        {
+          "x": -0.660001338,
+          "y": 15.920002
+        },
+        {
+          "x": -1.87000132,
+          "y": 17.3300018
+        },
+        {
+          "x": -1.94000137,
+          "y": 20.2500019
+        },
+        {
+          "x": 0.229998678,
+          "y": 18.420002
+        },
+        {
+          "x": 2.32999873,
+          "y": 20.2800026
+        },
+        {
+          "x": 2.33999872,
+          "y": 17.2500019
+        },
+        {
+          "x": 1.06999862,
+          "y": 15.7600012
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": true,
+      "direction": {
+        "x": -5.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": -50.0,
+      "usePivotRotation": false,
+      "pivotRotateSpeed": 0.0,
+      "pivotPos": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0,
+      "doNotRevive": false
+    }
+  ],
+  "wallData": [],
+  "starData": [
+    {
+      "x": 79.5,
+      "y": 21.3
+    },
+    {
+      "x": 96.98,
+      "y": -21.33
+    },
+    {
+      "x": 118.2,
+      "y": -18.8
+    }
+  ],
+  "noReviveZonesData": []
+}

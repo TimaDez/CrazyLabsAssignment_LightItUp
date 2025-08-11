@@ -1,0 +1,93 @@
+{
+  "block": {
+    "lineThickness": 0.8,
+    "spikeThickness": 0.8,
+    "spikeColliderThickness": 0.2,
+    "uvScale": 0.95,
+    "circlePartitions": 32,
+    "polySpikesGraceArea": 0.2,
+    "blockExplodeDelay": 0.4,
+    "pointsPlayerLightsUp": 15,
+    "pointsBlockLightsUp": 20,
+    "pointsExplodingPlayerLightsUp": 15,
+    "pointsExplodingBlockLightsUp": 20,
+    "pointsExplodingExplosion": 0
+  },
+  "ingame": {
+    "reviveCheckMask": {
+      "value": 35328
+    },
+    "reviveYDistance": 2.0,
+    "levelsPrPage": 10,
+    "tutorialDoubleJumpTextOffset": {
+      "x": 2.0,
+      "y": 2.0
+    },
+    "tutorialDoubleJumpTextPivot": {
+      "x": 0.5,
+      "y": 0.0
+    },
+    "tutorialDoubleJumpText": "TAP A SECOND TIME\nTO DOUBLE JUMP",
+    "tutorialDoubleJumpFontSize": 9.0,
+    "hapticFeedbackPlayerDead": 6,
+    "hapticFeedbackCompleteLevel": 4,
+    "hapticFeedbackLightUpBlock": 1,
+    "hapticFeedbackChangedSetting": 0
+  },
+  "player": {
+    "jumpPower": {
+      "x": 7.2,
+      "y": 18.0
+    },
+    "gravityScale": 2.5,
+    "killPlayerY": 10.0,
+    "reduceGravityWhenHoldingJump": false,
+    "reduceGravityScale": 0.5,
+    "maxReviveDistance": 10.0,
+    "reviveInvulnerabilityDuration": 1.5,
+    "blinkSpeed": 0.1,
+    "slowDownTarget": 0.8
+  },
+  "cameraFocus": {
+    "playerBorder": 5.0,
+    "playerZoomBorder": 2.0,
+    "blockBorder": 0.5,
+    "blockZoomBorder": 5.0,
+    "blockExplodePartsBorder": 0.0,
+    "blockExplodePartsFocusDuration": 2.0,
+    "blockExplodePartsFocusFadeDuration": 1.0,
+    "wallBorder": 0.0,
+    "wallZoomBorder": 5.0,
+    "blendTime": 1.8,
+    "blendCurve": {
+      "keys": [
+        {
+          "time": 0.0,
+          "value": 0.0,
+          "inTangent": 0.0,
+          "outTangent": 0.0,
+          "tangentMode": 0
+        },
+        {
+          "time": 1.0,
+          "value": 1.0,
+          "inTangent": 0.0,
+          "outTangent": 0.0,
+          "tangentMode": 0
+        }
+      ],
+      "length": 2,
+      "preWrapMode": 8,
+      "postWrapMode": 8
+    },
+    "zPosition": -10.0,
+    "minOrthoSize": 10.0,
+    "dampeningX": 0.8,
+    "dampeningY": 0.9,
+    "dampeningOrtho": 0.95,
+    "zoomDirectionChangeSpeed": 20.0,
+    "sortBlocksByPriority": false,
+    "zoomOutGameOverDuration": 1.0,
+    "zoomOutWinDuration": 2.0
+  }
+}

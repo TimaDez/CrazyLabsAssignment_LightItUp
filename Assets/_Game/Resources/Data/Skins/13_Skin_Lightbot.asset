@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ca8b2379de54db5b9920d09bb5ae58, type: 3}
+  m_Name: 13_Skin_Lightbot
+  m_EditorClassIdentifier: 
+  id: light_bot
+  description: Light-bot
+  condition: {fileID: 11400000, guid: 1eecade01e95d48a985783c33f6ebd8a, type: 2}
+  icon: {fileID: 21300000, guid: 7f343fa94a8f241faa9c64121931b3eb, type: 3}
+  iconHighlighted: {fileID: 21300000, guid: 486c1ee199c564d8a8b52e3d1783b6cc, type: 3}
+  iconCircle: {fileID: 21300000, guid: ad0684cbd3f86416d9d1344d56782524, type: 3}
+  modelResourcePath: Player_Robot

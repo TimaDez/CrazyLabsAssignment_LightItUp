@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4583db7ce6574646b53153fb02b836e, type: 3}
+  m_Name: BoostersConfiguration
+  m_EditorClassIdentifier: 
+  boosters:
+  - {fileID: 11400000, guid: 492599b73139744b290f3b8221a92798, type: 2}
+  - {fileID: 11400000, guid: 587faafef5f8a4165913032af5505178, type: 2}
+  - {fileID: 11400000, guid: a63f0adc7c29c4f8c99acc02dd60433c, type: 2}
+  springShoesJumpCount: 3
+  magicHatRadius: 2
+  initialBoosterUnlockCharges: 3

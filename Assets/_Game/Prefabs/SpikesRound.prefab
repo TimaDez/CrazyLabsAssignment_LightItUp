@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1340151346988012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4761152664121266}
+  - component: {fileID: 114144710964562962}
+  - component: {fileID: 60406434093948300}
+  m_Layer: 9
+  m_Name: SpikesRound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4761152664121266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340151346988012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114144710964562962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340151346988012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2717405993b59ab42909ee6f005f3b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p: {fileID: 60406434093948300}
+  radius: 1
+  spikes:
+    useSpikes: 0
+    maxRange: 1
+    minRange: 0.611
+    spikes: {fileID: 0}
+--- !u!60 &60406434093948300
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340151346988012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.9899494, y: -0.9899495}
+      - {x: -1.1640573, y: -0.7777986}
+      - {x: -1.2934313, y: -0.535757}
+      - {x: -1.3730993, y: -0.27312654}
+      - {x: -1.4, y: 0.000000016694832}
+      - {x: -1.3730993, y: 0.27312657}
+      - {x: -1.2934312, y: 0.53575706}
+      - {x: -1.1640576, y: 0.77779806}
+      - {x: -0.98994964, y: 0.9899493}
+      - {x: -0.7777984, y: 1.1640574}
+      - {x: -0.53575677, y: 1.2934314}
+      - {x: -0.27312633, y: 1.3730994}
+      - {x: 0.00000024478376, y: 1.4}
+      - {x: 0.00000020981467, y: 1.2}
+      - {x: -0.23410828, y: 1.1769425}
+      - {x: -0.45922014, y: 1.1086556}
+      - {x: -0.6666844, y: 0.9977636}
+      - {x: -0.8485283, y: 0.848528}
+      - {x: -0.9977637, y: 0.6666841}
+      - {x: -1.1086553, y: 0.45922035}
+      - {x: -1.1769423, y: 0.23410851}
+      - {x: -1.2, y: 0.000000014309857}
+      - {x: -1.1769423, y: -0.23410846}
+      - {x: -1.1086555, y: -0.45922032}
+      - {x: -0.9977634, y: -0.6666845}
+      - {x: -0.8485281, y: -0.8485282}

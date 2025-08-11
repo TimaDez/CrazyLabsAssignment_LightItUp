@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ca8b2379de54db5b9920d09bb5ae58, type: 3}
+  m_Name: 17_Skin_Cupid
+  m_EditorClassIdentifier: 
+  id: cupid
+  description: Cupid
+  condition: {fileID: 11400000, guid: 3c04dc93c501e488d946d6b4a41b6545, type: 2}
+  icon: {fileID: 21300000, guid: 49ade429dd67548c7bcafc886afaaa78, type: 3}
+  iconHighlighted: {fileID: 21300000, guid: da9aed34084b64d8bb6d726d2d32dfbe, type: 3}
+  iconCircle: {fileID: 21300000, guid: bbb2b307860b44a6090b38f43131754a, type: 3}
+  modelResourcePath: Player_cupid

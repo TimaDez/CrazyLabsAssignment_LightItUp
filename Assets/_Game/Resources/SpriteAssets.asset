@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcac49a8e8771294d86db3641bed8e0a, type: 3}
+  m_Name: SpriteAssets
+  m_EditorClassIdentifier: 
+  blockSprites:
+  - shape: 0
+    lit: {fileID: 21300000, guid: a685d9ae791a97d479f05d1a20eeddb8, type: 3}
+    unlit: {fileID: 21300000, guid: 74fe0eb7a6d8c20469814141092e731b, type: 3}
+  - shape: 1
+    lit: {fileID: 21300000, guid: a685d9ae791a97d479f05d1a20eeddb8, type: 3}
+    unlit: {fileID: 21300000, guid: 74fe0eb7a6d8c20469814141092e731b, type: 3}
+  - shape: 2
+    lit: {fileID: 21300000, guid: a685d9ae791a97d479f05d1a20eeddb8, type: 3}
+    unlit: {fileID: 21300000, guid: 74fe0eb7a6d8c20469814141092e731b, type: 3}
+  polyDot: {fileID: 21300000, guid: f410343f44a616e42ae5514c52852de5, type: 3}
+  colorSchemes:
+  - name: Neon
+    colors:
+    - {r: 0.99607843, g: 0.84705883, b: 0.19215687, a: 1}
+    - {r: 0.16862746, g: 0.99607843, b: 0.78039217, a: 1}
+    - {r: 0.9882353, g: 0.09411765, b: 0.5803922, a: 1}
+    - {r: 0.54509807, g: 0.14509805, b: 0.9843137, a: 1}
+    - {r: 0.34117648, g: 0.7882353, b: 0.99215686, a: 1}
+    colorFillMats:
+    - {fileID: 2100000, guid: 5b4bbc0f75b43a445b84048d79200c40, type: 2}
+    - {fileID: 2100000, guid: 76d3f9f7f9e855e4db8836aae40286ae, type: 2}
+    - {fileID: 2100000, guid: 96b669771e8f1e14aaf79b8fcdfd8b45, type: 2}
+    - {fileID: 2100000, guid: 06911fa0354035d498a9c34facc40473, type: 2}
+    - {fileID: 2100000, guid: 14df340a0e44ed245983c46cab426b7c, type: 2}
+    colorOutlineMats:
+    - {fileID: 2100000, guid: 55c9b564fb9aa8f45b7cbc134f6d77fd, type: 2}
+    - {fileID: 2100000, guid: bd41e77a9f3ac6940ba5e4a12c0145c7, type: 2}
+    - {fileID: 2100000, guid: 6e6b12fd178080844a8fb501dfc0af5c, type: 2}
+    - {fileID: 2100000, guid: ec4206f7e8367164691f6c329a098381, type: 2}
+    - {fileID: 2100000, guid: e5cf995d408ec0947ae3a86aacd500fa, type: 2}
+  outlineUnlit: {fileID: 2800000, guid: 634d2969b53b51142b51dda6caa1687e, type: 3}
+  outlineLit: {fileID: 2800000, guid: 61a0fa8f0b75b134da1bb88441add324, type: 3}
+  tutorialImages:
+  - imgType: 1
+    sprite: {fileID: 21300000, guid: b911fa1a54dae7e4b8da463284f4112e, type: 3}
+  - imgType: 2
+    sprite: {fileID: 21300000, guid: b911fa1a54dae7e4b8da463284f4112e, type: 3}
+  - imgType: 3
+    sprite: {fileID: 21300000, guid: b911fa1a54dae7e4b8da463284f4112e, type: 3}
+  effectorAttractArrow: {fileID: 21300000, guid: decf5c7f80b16454d917f0c776c8c951,
+    type: 3}
+  effectorDeflectArrow: {fileID: 21300000, guid: f3d7cdd18d6a7c94bb590e6d97f1a816,
+    type: 3}
+  starFilled: {fileID: 21300000, guid: 6f61d6f6aba3af34b98c1d07cab1a57c, type: 3}
+  starEmpty: {fileID: 21300000, guid: 558031a950a1f914dace5132155adfe3, type: 3}
+  auraOrb: {fileID: 21300000, guid: bac3c7f9cde794d539cb84978d2e8a4e, type: 3}
+  aura: {fileID: 21300000, guid: b3dda0e31451b8844a7199a55ebc2f8c, type: 3}
+  boosterIconShoes: {fileID: 21300000, guid: 5dd371c944f11c44b9447237de51894f, type: 3}
+  boosterIconBoots: {fileID: 21300000, guid: dbc328c6bdc917d45acd2b11b0b1c0a1, type: 3}
+  boosterIconAura: {fileID: 21300000, guid: fc8714151aa56cf4f9428c089674b102, type: 3}
+  boosterIconSmallShoes: {fileID: 21300000, guid: e5f3915236b1d2c438fe360b3af6c7a5,
+    type: 3}
+  boosterIconSmallBoots: {fileID: 21300000, guid: 57fad5d0277548241b3bd3bc3191a5d1,
+    type: 3}
+  boosterIconSmallAura: {fileID: 21300000, guid: 7b34763bd7f90b747a4527e45d0a53af,
+    type: 3}
+  boosterIconBigShoes: {fileID: 21300000, guid: 5dd371c944f11c44b9447237de51894f,
+    type: 3}
+  boosterIconBigBoots: {fileID: 21300000, guid: dbc328c6bdc917d45acd2b11b0b1c0a1,
+    type: 3}
+  boosterIconBigAura: {fileID: 21300000, guid: fc8714151aa56cf4f9428c089674b102, type: 3}
+  boosterSelectedFrame: {fileID: 21300000, guid: 6ca2675d9b341464a95396699c7c6104,
+    type: 3}
+  boosterUnselectedFrame: {fileID: 21300000, guid: 3d21631e02d3b624db89cb34d973293c,
+    type: 3}
+  boosterButtonShoesDefault: {fileID: 21300000, guid: 7052aa138253b9247a3a9b5faa497aa0,
+    type: 3}
+  boosterButtonBootsDefault: {fileID: 21300000, guid: 6d0d5c9806d6d7342b2ebbe04bc77304,
+    type: 3}
+  boosterButtonAuraDefault: {fileID: 21300000, guid: ae30c02484cd9da4997cbf8a5722c45f,
+    type: 3}
+  boosterSelectedCheckmark: {fileID: 21300000, guid: a1e7c93e0306b2c4da319882dc8c14f5,
+    type: 3}
+  boosterAddMore: {fileID: 21300000, guid: 661f09a647c07fe4ba77e02eef2f0df0, type: 3}
+  boosterLock: {fileID: 21300000, guid: 3de64524c97da1c4aa8ad46a4cdee1d8, type: 3}

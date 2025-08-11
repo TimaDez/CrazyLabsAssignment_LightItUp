@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ca8b2379de54db5b9920d09bb5ae58, type: 3}
+  m_Name: 2_Skin_SuperJumper
+  m_EditorClassIdentifier: 
+  id: super_jumper
+  description: Super Jumper
+  condition: {fileID: 11400000, guid: f4e2bed506ff54addab17b51ced15372, type: 2}
+  icon: {fileID: 21300000, guid: 28f9829c17d6d4474a9a7fd6e6b47595, type: 3}
+  iconHighlighted: {fileID: 21300000, guid: 46bba69d202f44b718c497ef34ec3da1, type: 3}
+  iconCircle: {fileID: 21300000, guid: 99d8f41dd4d4f4bd8bcd75a5308db374, type: 3}
+  modelResourcePath: Player_Cape

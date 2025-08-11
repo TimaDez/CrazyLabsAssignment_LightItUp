@@ -1,0 +1,1629 @@
+{
+  "uid": "331331e",
+  "version": 1,
+  "player": {
+    "x": -10.7,
+    "y": -3.4
+  },
+  "jumps1Star": 5,
+  "jumps2Star": 3,
+  "blockData": [
+    {
+      "name": "Star",
+      "position": {
+        "x": 1.17,
+        "y": 13.18
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.559193,
+        "w": -0.8290375,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 292.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (1)",
+      "position": {
+        "x": -4.27191162,
+        "y": 9.025383
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.8038569,
+        "w": 0.5948228,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 107.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (2)",
+      "position": {
+        "x": 1.13,
+        "y": 4.17
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.622514546,
+        "w": -0.7826082,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 283.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (3)",
+      "position": {
+        "x": -17.9,
+        "y": 2.94
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.7313537,
+        "w": 0.6819984,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 94.0
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (4)",
+      "position": {
+        "x": -17.9,
+        "y": 10.83
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.9099613,
+        "w": 0.414693266,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 131.0
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (5)",
+      "position": {
+        "x": -22.68,
+        "y": 7.31
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.06975647,
+        "w": 0.9975641,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 8.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (6)",
+      "position": {
+        "x": -9.36,
+        "y": 18.9
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.9953962,
+        "w": 0.09584576,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 169.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (7)",
+      "position": {
+        "x": -14.29,
+        "y": 21.25
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.987688363,
+        "w": -0.156434447,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 198.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (8)",
+      "position": {
+        "x": -10.38,
+        "y": 24.15
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.6755902,
+        "w": 0.7372774,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 85.0
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (9)",
+      "position": {
+        "x": -10.38,
+        "y": -7.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.987688363,
+        "w": -0.156434447,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 198.0
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (10)",
+      "position": {
+        "x": -6.4,
+        "y": -3.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.484809548,
+        "w": -0.8746198,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 302.0
+        }
+      },
+      "colorIdx": 0,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "Star (11)",
+      "position": {
+        "x": -6.4,
+        "y": 33.4
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.7313537,
+        "w": 0.6819984,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 94.0
+        }
+      },
+      "colorIdx": 1,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 2,
+      "circleRadius": 0.0,
+      "boxSize": {
+        "x": 4.44,
+        "y": 4.44
+      },
+      "polygonPoints": [
+        {
+          "x": 1.36,
+          "y": -0.13
+        },
+        {
+          "x": 0.52,
+          "y": -0.99
+        },
+        {
+          "x": 1.11,
+          "y": -2.17
+        },
+        {
+          "x": -0.12,
+          "y": -1.44
+        },
+        {
+          "x": -1.15,
+          "y": -2.22
+        },
+        {
+          "x": -0.81,
+          "y": -1.01
+        },
+        {
+          "x": -1.68,
+          "y": -0.11
+        },
+        {
+          "x": -0.67,
+          "y": -0.12
+        },
+        {
+          "x": -0.15,
+          "y": 0.84
+        },
+        {
+          "x": 0.42,
+          "y": -0.14
+        }
+      ],
+      "useEffector": false,
+      "effectorRadius": 0.0,
+      "effectorPower": 0.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "SimpleBlock",
+      "position": {
+        "x": -17.4,
+        "y": 7.3
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "colorIdx": 2,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 1,
+      "circleRadius": 1.79,
+      "boxSize": {
+        "x": 0.64,
+        "y": 0.64
+      },
+      "polygonPoints": [],
+      "useEffector": true,
+      "effectorRadius": 6.9,
+      "effectorPower": 30.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.855,
+        "minRange": 0.457
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "SimpleBlock (1)",
+      "position": {
+        "x": -4.68,
+        "y": 3.73
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.6877444,
+        "w": 0.725953,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 86.90364
+        }
+      },
+      "colorIdx": 3,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 1,
+      "circleRadius": 1.79,
+      "boxSize": {
+        "x": 0.64,
+        "y": 0.64
+      },
+      "polygonPoints": [],
+      "useEffector": true,
+      "effectorRadius": 7.16,
+      "effectorPower": 20.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.855,
+        "minRange": 0.457
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    },
+    {
+      "name": "SimpleBlock (2)",
+      "position": {
+        "x": -6.5,
+        "y": 28.6
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.6877444,
+        "w": 0.725953,
+        "eulerAngles": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 86.90364
+        }
+      },
+      "colorIdx": 4,
+      "mustBeListToWin": true,
+      "isKinematic": false,
+      "shape": 1,
+      "circleRadius": 1.79,
+      "boxSize": {
+        "x": 0.64,
+        "y": 0.64
+      },
+      "polygonPoints": [],
+      "useEffector": true,
+      "effectorRadius": 7.79,
+      "effectorPower": 20.0,
+      "useMove": false,
+      "direction": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "localDirection": false,
+      "useRotation": false,
+      "rotateSpeed": 0.0,
+      "topSpikes": {
+        "useSpikes": true,
+        "maxRange": 0.855,
+        "minRange": 0.457
+      },
+      "botSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "leftSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "rightSpikes": {
+        "useSpikes": false,
+        "maxRange": 1.0,
+        "minRange": 0.0
+      },
+      "useExplode": false,
+      "explodePoints": [],
+      "showTutorialtext": false,
+      "tutorialText": "",
+      "tutorialFontSize": 5.0,
+      "tutorialTextOffset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialTextPivot": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "tutorialImage": 0,
+      "tutorialEffect": 0
+    }
+  ],
+  "wallData": [],
+  "starData": [
+    {
+      "x": -7.47,
+      "y": 7.62
+    },
+    {
+      "x": -21.6,
+      "y": 15.6
+    },
+    {
+      "x": -3.3,
+      "y": 23.1
+    }
+  ]
+}

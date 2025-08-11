@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e324ea7d9d3b1240b8500b46a086a00, type: 3}
+  m_Name: PrefabAssets
+  m_EditorClassIdentifier: 
+  createDict: 1
+  blocks:
+  - {fileID: 114134866383641198, guid: b97e0407680c3f4428380c6012c88e02, type: 3}
+  wall: {fileID: 114509187006808676, guid: 4130c11e4cfdb104e8548a8019c07e6f, type: 3}
+  starDummy: {fileID: 4147717520411624, guid: 667864c7e27d444458ab494587b0825f, type: 3}
+  reviveZone: {fileID: 114387050295158664, guid: f148e0b06dde24ff0918016160624f8a,
+    type: 3}
+  collectibles:
+  - {fileID: 114750029366649376, guid: d65d79eab3ab1234cb59b77ad8a22199, type: 3}
+  effector: {fileID: 114567523935346506, guid: 0ea16168c4cc44d48a413e4a45983fb2, type: 3}
+  playerDummy: {fileID: 114242818544711160, guid: 05a7648d0b26d1e4ca73cd2f1328818e,
+    type: 3}
+  moveArrow: {fileID: 4129760396929088, guid: 684b1c1f0147a4f4fb8bd5edb806ef30, type: 3}
+  rotateArrow: {fileID: 4196758633859254, guid: 304b11bd1183dd04e86dcec0b2c72bf9,
+    type: 3}
+  effectorArrow: {fileID: 212080453605542388, guid: d9128e0fe8bd9ef4abb8dc6ef2027685,
+    type: 3}
+  arrowToPrefabsList:
+  - type: 0
+    prefab: {fileID: 1815990442473070, guid: 684b1c1f0147a4f4fb8bd5edb806ef30, type: 3}
+  - type: 1
+    prefab: {fileID: 1518817223021504, guid: 304b11bd1183dd04e86dcec0b2c72bf9, type: 3}
+  - type: 2
+    prefab: {fileID: 1549452918677448, guid: d9128e0fe8bd9ef4abb8dc6ef2027685, type: 3}
+  - type: 3
+    prefab: {fileID: 1549452918677448, guid: fde6c02dc09274175be7b264d95d82fc, type: 3}
+  - type: 4
+    prefab: {fileID: 1518817223021504, guid: d4b6d68ac72c94942844fb6ba1b74dcd, type: 3}
+  - type: 5
+    prefab: {fileID: 1518817223021504, guid: 47334279cd02d4009924cad79ea00e77, type: 3}
+  - type: 6
+    prefab: {fileID: 1518817223021504, guid: 6f3008d1481cd4eac94b346342398525, type: 3}
+  - type: 7
+    prefab: {fileID: 1518817223021504, guid: 84f33c2aae59c43dba5dfd6c82e55646, type: 3}
+  - type: 8
+    prefab: {fileID: 1518817223021504, guid: 4dd83d273129c4a4c9324e22bd09911e, type: 3}
+  - type: 9
+    prefab: {fileID: 1518817223021504, guid: ab67ff89c7897489a85977b1e1d6d10e, type: 3}
+  - type: 10
+    prefab: {fileID: 1518817223021504, guid: 6924c61347b684aa090c6f8062c1c651, type: 3}
+  spikes: {fileID: 114317518585255614, guid: 84f0dea5a69bbb546ae02d5faaf30e9c, type: 3}
+  spikesRound: {fileID: 114144710964562962, guid: b45687f390cfc424eb0c06f2eaba2261,
+    type: 3}
+  explodeParts: {fileID: 114293088472313920, guid: 2f4612f312d2e0f4f8b326d3094386f9,
+    type: 3}
+  pivotRotator: {fileID: 114925834519977734, guid: 974e349b952664feca2cdc6cbf5fcf87,
+    type: 3}
+  shapeMesh: {fileID: 114600052374645940, guid: 0d852d1770a67fc4ca8be65012de6794,
+    type: 3}
+  lineMesher: {fileID: 114006880140490810, guid: 09b6397bbbb281840b9d13cdca7fd78a,
+    type: 3}
+  gameLevelClean: {fileID: 114529233725212422, guid: 4b85654b9e0d80343bc0a16f076e689c,
+    type: 3}
+  auraParticles: {fileID: 1121304216834588, guid: a991a76aa9e48f348a7be64120b51024,
+    type: 3}
+  SeekingMissilesPrefab: {fileID: 3875181125957377403, guid: 2ebe757ff6848d84ba6a3592c7e5f2fc,
+    type: 3}

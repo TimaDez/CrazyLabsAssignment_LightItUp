@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ca8b2379de54db5b9920d09bb5ae58, type: 3}
+  m_Name: 14_Skin_FunkyDraft
+  m_EditorClassIdentifier: 
+  id: funky_draft
+  description: The Funky Draft
+  condition: {fileID: 11400000, guid: 01fc013cfc1c14f26802c7c1486803a3, type: 2}
+  icon: {fileID: 21300000, guid: 0a8e324f86b054c78891a5ed381b83fa, type: 3}
+  iconHighlighted: {fileID: 21300000, guid: e2e1bce3d4ea746e78d993347c8a5512, type: 3}
+  iconCircle: {fileID: 21300000, guid: d42cff7cc48874d049adbd77cd185d40, type: 3}
+  modelResourcePath: Player_Daft_punk_dark_face

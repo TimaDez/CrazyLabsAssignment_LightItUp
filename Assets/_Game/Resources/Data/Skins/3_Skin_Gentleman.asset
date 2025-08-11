@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ca8b2379de54db5b9920d09bb5ae58, type: 3}
+  m_Name: 3_Skin_Gentleman
+  m_EditorClassIdentifier: 
+  id: gentleman
+  description: The Gentleman
+  condition: {fileID: 11400000, guid: 9a9a2235570ba416ab14a46409fce848, type: 2}
+  icon: {fileID: 21300000, guid: 3dbcb2f59d91f4db4824d161e599eec2, type: 3}
+  iconHighlighted: {fileID: 21300000, guid: a80190cea43a34c8bb6afadd2bfd45fd, type: 3}
+  iconCircle: {fileID: 21300000, guid: 2fe0e90272cc2433cae604ea9746ad90, type: 3}
+  modelResourcePath: Player_TopHat

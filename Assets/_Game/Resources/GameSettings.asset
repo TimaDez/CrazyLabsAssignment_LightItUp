@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ab8db12aa825e4c8767bee96ba946b, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  filePath: Assets/_Game/Resources/GameSettings.txt
+  block:
+    lineThickness: 0.8
+    spikeThickness: 0.8
+    spikeColliderThickness: 0.2
+    uvScale: 0.25
+    circlePartitions: 32
+    polySpikesGraceArea: 0.2
+    blockExplodeDelay: 1
+    pointsPlayerLightsUp: 30
+    pointsBlockLightsUp: 15
+    pointsExplodingPlayerLightsUp: 30
+    pointsExplodingBlockLightsUp: 15
+    pointsExplodingExplosion: 15
+  ingame:
+    reviveCheckMask:
+      serializedVersion: 2
+      m_Bits: 0
+    reviveYDistance: 2
+    levelsPrPage: 10
+    tutorialDoubleJumpTextOffset: {x: 2, y: 2}
+    tutorialDoubleJumpTextPivot: {x: 0, y: 0}
+    tutorialDoubleJumpText: 
+    tutorialDoubleJumpFontSize: 5
+    hapticFeedbackPlayerDead: 1
+    hapticFeedbackCompleteLevel: 1
+    hapticFeedbackLightUpBlock: 1
+    hapticFeedbackChangedSetting: 1
+  player:
+    jumpPower: {x: 7.2, y: 18}
+    gravityScale: 2.5
+    killPlayerY: 10
+    reduceGravityWhenHoldingJump: 0
+    reduceGravityScale: 0.5
+    maxReviveDistance: 10
+    reviveInvulnerabilityDuration: 5
+    blinkSpeed: 0.2
+    slowDownTarget: 0.5
+  cameraFocus:
+    playerBorder: 5
+    playerZoomBorder: 1
+    blockBorder: 0
+    blockZoomBorder: 0
+    blockExplodePartsBorder: 1
+    blockExplodePartsFocusDuration: 3
+    blockExplodePartsFocusFadeDuration: 0.5
+    wallBorder: 0
+    wallZoomBorder: 0
+    blendTime: 1.8
+    blendCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    zPosition: -10
+    minOrthoSize: 10
+    dampeningX: 0.8
+    dampeningY: 0.9
+    dampeningOrtho: 0.95
+    zoomDirectionChangeSpeed: 20
+    sortBlocksByPriority: 0
+    zoomOutGameOverDuration: 1
+    zoomOutWinDuration: 2
+  level:
+    safeColor: {r: 0, g: 1, b: 0, a: 1}
+    unsafeColor: {r: 1, g: 0, b: 0, a: 1}
+    drawZonesHighlights: 1
