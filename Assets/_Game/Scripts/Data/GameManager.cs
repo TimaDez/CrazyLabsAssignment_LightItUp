@@ -5,6 +5,7 @@ using UnityEngine;
 using LightItUp.Game;
 using LightItUp.Sound;
 using LightItUp.UI;
+using UnityEngine.Serialization;
 
 namespace LightItUp.Data
 {
@@ -18,9 +19,14 @@ namespace LightItUp.Data
         public static int currentLevelIndex;
         public static bool IsApplicationQuitting;
         public bool isReplay;
+        
+        [SerializeField] private bool _activeSeekingMissilesFeature = true;
+        
         public Action OnAutoScroll = () => { };
         private bool _paused;    
         private bool hasPlayedLastBlockEffect;
+        private SeekingMissilesController _seekingMissilesController = null;
+
         private void OnApplicationQuit()
         {
             IsApplicationQuitting = true;
@@ -223,8 +229,11 @@ namespace LightItUp.Data
             CleanupScene();
             var gameLevel = Instantiate(PrefabAssets.Instance.gameLevelClean);
             currentLevel = gameLevel;
+            currentLevel.OnLevelLoaded += OnLevelLoaded;
             gameLevel.Load(levelIdx + 1);
             CanvasController.Open(CanvasController.Panels.Game);
+            CanvasController.GetPanel<UI_Game>().SetSeekingMissilesActive(_activeSeekingMissilesFeature);
+            
             GameData.PlayerData.selectedLevelIdx = levelIdx;
             var cpfx = FindObjectsOfType<CelebrationFX>();
             foreach (CelebrationFX c in cpfx)
@@ -251,7 +260,39 @@ namespace LightItUp.Data
             currentLevel.ConfirmGameLoadFinalized ();
         }
 
-		void ShowBoostersPurchaseFeature()
+        private void OnLevelLoaded()
+        {
+            currentLevel.OnLevelLoaded -= OnLevelLoaded;
+
+            CreateSeekingMissiles();
+        }
+        
+        private void CreateSeekingMissiles()
+        {
+            Debug.Log($"[GameManager] CreateSeekingMissiles()");
+            //TODO: check pooling of missiles
+            if(currentLevel == null || !_activeSeekingMissilesFeature )
+            {
+                return;
+            }
+
+            if (_seekingMissilesController != null)
+            {
+                _seekingMissilesController.Init(currentLevel.player, currentLevel.blocks);
+                return;
+            }
+            
+            _seekingMissilesController = Instantiate(PrefabAssets.Instance.SeekingMissilesPrefab);
+            if (_seekingMissilesController == null)
+            {
+                Debug.LogWarning("[GameLevel] InitSeekingMissiles() SeekingMissilesController is not initialized.");
+                return;
+            }
+			
+            _seekingMissilesController.Init(currentLevel.player, currentLevel.blocks);
+        }
+        
+        void ShowBoostersPurchaseFeature()
 		{
 			
             CanvasController.Open (CanvasController.Popups.PreLevelPopup);
@@ -290,11 +331,6 @@ namespace LightItUp.Data
 			}
 		}
 
-        public void TryFireMissiles()
-        {
-            currentLevel.UseSeekingMissiles();
-        }
-        
         public void CleanupScene()
         {
             GameData.PlayerData.wonLastGame = false;
@@ -370,5 +406,11 @@ namespace LightItUp.Data
 
             Time.timeScale = _paused ? 0 : 1;
         }
+
+        private void OnDestroy()
+        {
+            currentLevel.OnLevelLoaded -= OnLevelLoaded;
+        }
     }
+    
 }

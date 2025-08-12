@@ -16,6 +16,8 @@ namespace LightItUp.Game
 	[ExecuteInEditMode]
 	public class GameLevel : MonoBehaviour
 	{
+		public event Action OnLevelLoaded;
+		
 		public static string Base64Encode(string plainText) {
 			var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
 			return Convert.ToBase64String(plainTextBytes);
@@ -374,6 +376,8 @@ namespace LightItUp.Game
 			isLoadFinalized = true;
 			player.ActivateBoosters (BoosterService.Instance.GetCurrentActiveBoosters());
 			BoosterService.Instance.ConsumeCurrentActiveBoostres ();
+			
+			OnLevelLoaded?.Invoke();
 
 		}
 		public void Load(int level)
@@ -465,7 +469,6 @@ namespace LightItUp.Game
 				Debug.LogError("No level with idx: " + levelIdx);
 			}
 			FinalizeStartLevel();
-			InitSeekingMissiles();
 		}
 
 		public void FinalizeStartLevel() {
@@ -481,25 +484,16 @@ namespace LightItUp.Game
 				player.camFocus.Init();
 			}
 		}
-
-		private void InitSeekingMissiles()
-		{
-			Debug.Log($"[GameManager] LoadSeekingMissiles()");
-			_seekingMissilesController = Instantiate(PrefabAssets.Instance.SeekingMissilesPrefab, transform);
-			if (_seekingMissilesController == null)
-			{
-				Debug.LogWarning("[GameLevel] InitSeekingMissiles() SeekingMissilesController is not initialized.");
-				return;
-			}
-			
-			_seekingMissilesController.Init(player, blocks);
-		}
 		
 		public void UseSeekingMissiles()
 		{
+			//TODO: check transaction between class and controller
+			// if(!_isPowerUpFeatureActive)
+			// 	return;
+			//No need if because of null check in SeekingMissilesController
 			if (_seekingMissilesController != null)
 			{
-				_seekingMissilesController.UseSeekingMissiles();
+				_seekingMissilesController.UseSeekingMissiles().Forget();
 			}
 			else
 			{
@@ -573,7 +567,7 @@ namespace LightItUp.Game
 		}
 		
 		Dictionary<BlockController, TutorialTextData> tutorialTexts;
-		
+
 
 		public void ShowTutorial(string tutorialText, float fontSize, Vector2 tutorialTextOffset, Vector2 pivot, BlockController.TutorialImages img, BlockController block)
 		{
@@ -754,6 +748,6 @@ namespace LightItUp.Game
 				UnityEditor.EditorPrefs.SetBool("GameLevel.saveLevelOnPlay", value);
 			}
 		}
-#endif		
+#endif
 	}
 }

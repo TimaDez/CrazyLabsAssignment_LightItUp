@@ -23,7 +23,10 @@ namespace LightItUp.UI
 		public Button pauseButton;
 		
 		[SerializeField] private Button _seekingMissilesButton;
+		private bool _isSeekingMissilesFeatureActive = false;
 
+		public Button SeekingMissilesButton => _seekingMissilesButton;
+		
 		void Awake()
 		{
 			PlayerController.StateChangedEvent += PlayerControllerOnStateChangedEvent;
@@ -140,9 +143,22 @@ namespace LightItUp.UI
 			rightHand.GetComponent<Animator>().SetTrigger("HideEverything");
 			leftHand.GetComponent<Animator>().SetTrigger("HideEverything");
 		}
+
+		public void SetSeekingMissilesActive(bool isSeekingMissilesFeature)
+		{
+			_isSeekingMissilesFeatureActive = isSeekingMissilesFeature;
+			DisableSeekingMissilesButton();
+		}
 		
 		private void ShowSeekingMissilesButton(bool show)
 		{
+			if(!_isSeekingMissilesFeatureActive)
+			{
+				Debug.Log($"[UI_Game] ShowSeekingMissilesButton() Seeking missiles feature is not available.");
+				return;
+			}
+			
+			//TODO: check how to hide button if the feature is not available
 			Debug.Log($"[UI_Game] ShowSeekingMissilesButton() show: {show}");
 			if (show)
 			{
@@ -158,12 +174,18 @@ namespace LightItUp.UI
 			}
 			else
 			{
-				_seekingMissilesButton.transform.localScale = Vector3.zero;
-				_seekingMissilesButton.gameObject.SetActive(false);
-				_seekingMissilesButton.enabled = false;
+				DisableSeekingMissilesButton();
 			}
 		}
 
+		private void DisableSeekingMissilesButton()
+		{
+			Debug.Log($"[UI_Game] DisableSeekingMissilesButton()");
+			_seekingMissilesButton.transform.localScale = Vector3.zero;
+			_seekingMissilesButton.gameObject.SetActive(false);
+			_seekingMissilesButton.enabled = false;
+		}
+		
 		void OnDisable()
 		{
 			if (GameManager.IsApplicationQuitting)
@@ -210,10 +232,10 @@ namespace LightItUp.UI
 			rightHand.GetComponent<Animator>().SetTrigger("Pressed");
 		}
 
-		public void OnSeekingMissileButtonClicked()
-		{
-			GameManager.Instance.TryFireMissiles();
-		}
+		// public void OnSeekingMissileButtonClicked()
+		// {
+		// 	
+		// }
 
 		public void UpdateFeedbackPoints(int p)
 		{

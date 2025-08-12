@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using _Game.Scripts.SeekingMissiles.Models;
 using Cysharp.Threading.Tasks;
+using LightItUp;
 using LightItUp.Game;
+using LightItUp.UI;
 using UnityEngine;
 
 namespace _Game.Scripts.PowerUp
@@ -20,6 +22,7 @@ namespace _Game.Scripts.PowerUp
         private bool _isUsedOnLevel = false;
         private List<BlockController> _blocks;
         private PlayerController _player;
+        private UI_Game _uiGame;
 
         #endregion
 
@@ -27,8 +30,15 @@ namespace _Game.Scripts.PowerUp
 
         public void Init(PlayerController player, List<BlockController> blocks)
         {
+            _isUsedOnLevel = false;
             _player = player;
             _blocks = blocks;
+            
+            if(_uiGame == null)
+                _uiGame = CanvasController.GetPanel<UI_Game>();
+
+            _uiGame.SeekingMissilesButton.interactable = true;
+            _uiGame.SeekingMissilesButton.onClick.AddListener(() => UseSeekingMissiles().Forget());
         }
         
         public async UniTaskVoid UseSeekingMissiles()
@@ -40,6 +50,8 @@ namespace _Game.Scripts.PowerUp
             }
 
             _isUsedOnLevel = true;
+            _uiGame.SeekingMissilesButton.interactable = false;
+            
             var candidates = new List<(BlockController block, float sqrDist)>(_blocks.Count);
             foreach (var block in _blocks)
             {
@@ -47,7 +59,6 @@ namespace _Game.Scripts.PowerUp
                     continue;
 
                 var sqr = SqrDistanceToBlock(_player.transform.position, block);
-                //var sqr = SqrDistanceToBlock(playerPos, block);
                 if (float.IsInfinity(sqr))
                     continue;
 

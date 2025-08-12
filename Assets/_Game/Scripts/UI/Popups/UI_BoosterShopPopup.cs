@@ -11,7 +11,7 @@ namespace LightItUp.UI
 	public class UI_BoosterShopPopup : UI_Popup {
 
 
-		public static Action UI_BoosterShopPopupClosed;
+		public static Action  UI_BoosterShopPopupClosed;
 		public static Action UI_RVButtonResolved;
 		public ScrollRect scrollRect;
 		public UI_Menu uiMenu;
