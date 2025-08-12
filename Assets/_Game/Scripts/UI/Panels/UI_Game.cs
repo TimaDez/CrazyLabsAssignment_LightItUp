@@ -21,6 +21,8 @@ namespace LightItUp.UI
 		public GameObject progress;
 
 		public Button pauseButton;
+		
+		[SerializeField] private Button _seekingMissilesButton;
 
 		void Awake()
 		{
@@ -80,8 +82,7 @@ namespace LightItUp.UI
 			rightHand.GetComponent<Animator>().SetBool("ShowGameTutorial", GameData.PlayerData.showControlsTutorial);
 			leftHand.GetComponent<Animator>().SetBool("ShowGameTutorial", GameData.PlayerData.showControlsTutorial);
 			AdController.SetBannerAdArea(GetComponent<RectTransform>());
-
-
+			
 		}
 
 		public void DebugLightAllBlocks()
@@ -97,6 +98,8 @@ namespace LightItUp.UI
 	
 		public void ShowUI()
 		{
+			Debug.Log($"[UI_Game] ShowUI()");
+			ShowSeekingMissilesButton(true);
 			foreach (var a in anims)
 			{
 				a.gameObject.SetActive(true);
@@ -127,6 +130,8 @@ namespace LightItUp.UI
 		
 		public void Hide()
 		{
+			Debug.Log($"[UI_Game] Hide()");
+			ShowSeekingMissilesButton(false);
 			foreach (var a in anims)
 			{
 				a.Play("ScaleOut");
@@ -135,6 +140,30 @@ namespace LightItUp.UI
 			rightHand.GetComponent<Animator>().SetTrigger("HideEverything");
 			leftHand.GetComponent<Animator>().SetTrigger("HideEverything");
 		}
+		
+		private void ShowSeekingMissilesButton(bool show)
+		{
+			Debug.Log($"[UI_Game] ShowSeekingMissilesButton() show: {show}");
+			if (show)
+			{
+				_seekingMissilesButton.gameObject.SetActive(true);
+				LeanTween.scale(_seekingMissilesButton.gameObject, Vector3.one, 0.2f)
+					.setOnComplete(() =>
+					{
+						LeanTween.delayedCall(0.1f, () =>
+						{
+							_seekingMissilesButton.enabled = true;
+						});
+					});
+			}
+			else
+			{
+				_seekingMissilesButton.transform.localScale = Vector3.zero;
+				_seekingMissilesButton.gameObject.SetActive(false);
+				_seekingMissilesButton.enabled = false;
+			}
+		}
+
 		void OnDisable()
 		{
 			if (GameManager.IsApplicationQuitting)
@@ -145,7 +174,10 @@ namespace LightItUp.UI
 				a.gameObject.SetActive(false);
 			}
 			GameManager.Instance.playerStart -= HideHand;
+			
+			ShowSeekingMissilesButton(false);
 		}
+		
 		public void ShowFinger(int side)
 		{
 			if(GameData.PlayerData.showControlsTutorial)

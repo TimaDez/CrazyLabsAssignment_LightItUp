@@ -297,7 +297,6 @@ namespace LightItUp.Data
         
         public void CleanupScene()
         {
-        
             GameData.PlayerData.wonLastGame = false;
             WinConditionChecker.Reset();
             if (currentLevel != null)

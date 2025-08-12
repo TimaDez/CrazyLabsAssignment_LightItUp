@@ -581,6 +581,7 @@ MonoBehaviour:
   levelNameBackdrop: {fileID: 1353705670793668}
   progress: {fileID: 1225590775015202}
   pauseButton: {fileID: 114375943630757328}
+  _seekingMissilesButton: {fileID: 435856119369268317}
 --- !u!1 &1283319776814342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,7 +2810,7 @@ RectTransform:
   m_GameObject: {fileID: 8237736033243854341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2587680934426777517}
   m_Father: {fileID: 224353885026184430}
