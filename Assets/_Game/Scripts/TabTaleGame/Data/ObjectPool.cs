@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Game.Scripts.SeekingMissiles;
 using UnityEngine;
 using LightItUp.Game;
 using LightItUp.Singletons;
@@ -24,6 +25,11 @@ namespace LightItUp.Data
         public ParticleFXBasic starPickupFXPrefab;
         public ObjectPool<ParticleFXBasic> starPickupFXs;
 
+        
+        // NEW: missile prefab
+        public SeekingMissileBall seekingMissilePrefab; // assign in inspector // NEW: missile pool
+        public ObjectPool<SeekingMissileBall> seekingMissiles;
+        
         public void Init() { }
         public override void Awake()
         {
@@ -33,7 +39,22 @@ namespace LightItUp.Data
             celebrationFXs = GetPool(celebrationFXPrefab, 2, transform);
             tutorialTexts = GetPool(tutorialTextPrefab, 4, transform);
             starPickupFXs = GetPool(starPickupFXPrefab, 3, transform);
+            
+            // NEW: init missile pool (start count can be tuned)
+            //seekingMissiles = GetPool(seekingMissilePrefab, 3, transform);
         }
+
+        public void SetSeekingMissilePrefab(SeekingMissileBall prefab)
+        {
+            if (Instance == null)
+            {
+                Debug.LogError("ObjectPool instance is not initialized.");
+                return;
+            }
+            Instance.seekingMissilePrefab = prefab;
+            Instance.seekingMissiles = Instance.GetPool(prefab, 3, Instance.transform);
+        }
+        
         ObjectPool<T> GetPool<T>(T prefab, int startCount, Transform t) where T : PooledObject
         {
             return new ObjectPool<T>(prefab, startCount, t);
@@ -85,6 +106,16 @@ namespace LightItUp.Data
         public static void ReturnStarFX(ParticleFXBasic starFX)
         {
             Instance.starPickupFXs.ReturnObject(starFX);
+        }
+        
+        // NEW: missiles static API
+        public static SeekingMissileBall GetSeekingMissile()
+        {
+            return Instance.seekingMissiles.GetObject();
+        }
+        public static void ReturnSeekingMissile(SeekingMissileBall missile)
+        {
+            Instance.seekingMissiles.ReturnObject(missile);
         }
     }
 

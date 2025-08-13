@@ -33,6 +33,12 @@ namespace LightItUp
         bool hasStartPos;
         static Vector3 camStartPosition;
         static float camStartOrthoSize;
+        
+        // --------- #region Private members ---------
+        // NEW: missiles list we include in camera framing
+        private readonly List<Collider2D> _missileTargets = new List<Collider2D>(); // NEW
+        // ------------------------------------------
+        
         public BlockController GetClosesBlock()
         {
             if (unlitBlocks.Count > 0) {
@@ -95,6 +101,28 @@ namespace LightItUp
         {
             SetCamera(camStartPosition, camStartOrthoSize);
         }
+        
+        // --------- #region Methods: public API for missiles ---------
+        // NEW: register a missile collider to be included in camera rect
+        public void RegisterMissile(Collider2D col) // NEW
+        {
+            if (col == null)
+                return;
+            
+            if (!_missileTargets.Contains(col))
+                _missileTargets.Add(col);
+        }
+
+        // NEW: unregister when missile despawns/disabled
+        public void UnregisterMissile(Collider2D col) // NEW
+        {
+            if (col == null)
+                return;
+            
+            _missileTargets.Remove(col);
+        }
+        // ------------------------------------------------------------
+        
 		public void IgnoreTargetsByDuration(float ignoreDuration)
 		{
 			isIgnoringTargets = true;
@@ -139,6 +167,7 @@ namespace LightItUp
         
             ProgressBlendTime();
             Rect r = fullZoom < 0.0001f ? GetBlendedRect() : LerpRect(GetBlendedRect(), GetFullLevelRect(), GameSettings.CameraFocus.blendCurve.Evaluate(fullZoom));
+            r = ActiveMissiles(r);
             SetWantedValues(r);
             MoveTowardsWanted();
 
@@ -148,6 +177,32 @@ namespace LightItUp
             DrawDebugRect(r);
         }
 
+        private Rect ActiveMissiles(Rect r)
+        {
+            // NEW: include active missiles into the rect (persistent, not fading)
+            if (_missileTargets.Count > 0) // NEW
+            {
+                // cleanup nulls once per frame // NEW
+                for (var i = _missileTargets.Count - 1; i >= 0; i--) // NEW
+                {
+                    if (_missileTargets[i] == null)
+                        _missileTargets.RemoveAt(i); // NEW
+                }
+
+                foreach (var m in _missileTargets) // NEW
+                {
+                    if (!m)
+                        continue; // NEW
+                    
+                    var mRect = new Rect(m.bounds.center, m.bounds.size); // NEW
+                    // prefer a dedicated border if you add it; fallback to blockZoomBorder // NEW
+                    var border = GameSettings.CameraFocus.blockZoomBorder; // NEW (או missileZoomBorder אם תוסיף)
+                    r = IncludeRect(r, ExpandRect(mRect, border)); // NEW
+                }
+            }
+
+            return r;
+        }
 
         void GetSortedBlocks() {
             var b = GameManager.Instance.currentLevel.blocks;
@@ -179,7 +234,6 @@ namespace LightItUp
             }
             walls.AddRange(GameManager.Instance.currentLevel.walls);
         }
-
 
         float GetOrthoFromRect(Rect r)
         {
@@ -253,9 +307,30 @@ namespace LightItUp
                 }
             }
 
+            if (_missileTargets.Count > 0) // NEW
+            {
+                foreach (var m in _missileTargets) // NEW
+                {
+                    if (!m)
+                        continue; // NEW
+                    
+                    var mRect = new Rect(m.bounds.center, m.bounds.size); // NEW
+                    var border = GameSettings.CameraFocus.blockZoomBorder; // NEW (או missileZoomBorder)
+                    if (!rSet) // NEW
+                    {
+                        rSet = true; // NEW
+                        r = ExpandRect(mRect, border); // NEW
+                    }
+                    else // NEW
+                    {
+                        r = IncludeRect(r, ExpandRect(mRect, border)); // NEW
+                    }
+                }
+            }
+            
             return r;
         }
-
+        
         #region Target Rect Blending
 
         void ProgressBlendTime() {
@@ -302,6 +377,21 @@ namespace LightItUp
             }
             // Add explosions
             // Add indirect lit blocks
+            
+            // NEW: missiles are persistent focus elements (no fade)
+            if (_missileTargets.Count > 0) // NEW
+            {
+                foreach (var m in _missileTargets) // NEW
+                {
+                    if (!m)
+                        continue; // NEW
+                    
+                    var mRect = new Rect(m.bounds.center, m.bounds.size); // NEW
+                    var border = GameSettings.CameraFocus.blockZoomBorder; // NEW (או missileZoomBorder)
+                    r = IncludeRect(r, ExpandRect(mRect, border)); // NEW
+                }
+            }
+            
             return r;
         }
 

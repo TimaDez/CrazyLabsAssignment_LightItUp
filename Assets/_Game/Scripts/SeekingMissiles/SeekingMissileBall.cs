@@ -1,12 +1,14 @@
 using _Game.Scripts.SeekingMissiles.Models;
 using Cysharp.Threading.Tasks;
+using LightItUp;
+using LightItUp.Data;
 using LightItUp.Game;
 using UnityEngine;
 
 namespace _Game.Scripts.SeekingMissiles
 {
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
-    public class SeekingMissileBall : MonoBehaviour
+    public class SeekingMissileBall : PooledObject
     {
         #region Editor
 
@@ -25,9 +27,8 @@ namespace _Game.Scripts.SeekingMissiles
         private Vector2 _fallbackAimPoint;
         private float _lifetime;
         private bool _launched;
-
-        // Optional per-instance override (example)
         private float _speedMultiplier = 1f;
+        private CameraFocus _cameraFocus;
 
         #endregion
 
@@ -51,30 +52,34 @@ namespace _Game.Scripts.SeekingMissiles
             {
                 Debug.Log($"[SeekingMissileBall] Awake() Collider2D is missing");
                 _collider = GetComponent<Collider2D>();
-                _collider.isTrigger = true;
             }
 
-            // Apply initial visuals from data
+            if(_collider != null)
+                _collider.isTrigger = true;
+            
             if (_data != null && _sprite)
                 _sprite.color = _data.Color;
         }
 
-        public void SetData(SeekingMissileModel data)
+        public void SetData(SeekingMissileModel data, CameraFocus cameraFocus)
         {
-            // Assign model reference and apply visuals
             _data = data;
-            if (_data != null && _sprite) 
+            _cameraFocus = cameraFocus;
+            if (_data != null && _sprite)
                 _sprite.color = _data.Color;
         }
 
         public void SetSpeedMultiplier(float multiplier)
         {
-            // Per-instance override for dynamic effects
+            // Override for dynamic effects
             _speedMultiplier = Mathf.Max(0f, multiplier);
         }
 
         public void LaunchTowards(Vector2 aimPoint, BlockController target)
         {
+            if (_cameraFocus && _collider) 
+                _cameraFocus.RegisterMissile(_collider);
+
             // Initialize runtime state
             _target = target;
             _fallbackAimPoint = aimPoint;
@@ -109,8 +114,8 @@ namespace _Game.Scripts.SeekingMissiles
             _lifetime += Time.deltaTime;
             if (_lifetime >= _data.MaxLifetime)
             {
-                // Replace with pool return if you use pooling
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                ReturnToPool();
             }
         }
 
@@ -211,11 +216,15 @@ namespace _Game.Scripts.SeekingMissiles
             // Despawn the missile (replace with pool return if applicable)
 
             await UniTask.WaitForSeconds(0.2f, cancellationToken: this.GetCancellationTokenOnDestroy());
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            ReturnToPool();
         }
 
         private void OnDisable()
         {
+            if (_cameraFocus && _collider)
+                _cameraFocus.UnregisterMissile(_collider); // NEW
+            
             // Clear transient state (helpful with pooling)
             _launched = false;
             _target = null;
@@ -223,6 +232,47 @@ namespace _Game.Scripts.SeekingMissiles
                 _rb.velocity = Vector2.zero;
         }
         
+        // ----- Pool hooks -----
+        public override void OnInitPoolObj()
+        {
+            // Called when taken from pool
+            gameObject.SetActive(true);
+            if (_collider)
+                _collider.enabled = true;
+            
+            _launched = false;
+            _target = null;
+            _lifetime = 0f;
+            _rb.velocity = Vector2.zero;
+
+            // Register to camera so it keeps missile in frame
+            if (_cameraFocus && _collider)
+                _cameraFocus.RegisterMissile(_collider);
+        }
+
+        public override void OnReturnedPoolObj()
+        {
+            // Called when returned to pool
+            // Unregister from camera and reset state
+            if (_cameraFocus && _collider)
+                _cameraFocus.UnregisterMissile(_collider);
+            
+            _launched = false;
+            _target = null;
+            _rb.velocity = Vector2.zero;
+
+            // Disable visuals/collider as needed
+            if (_collider)
+                _collider.enabled = false;
+            
+            gameObject.SetActive(false);
+        }
+
+        private void ReturnToPool()
+        {
+            // Centralized return
+            ObjectPool.ReturnSeekingMissile(this);
+        }
         #endregion
     }
 }

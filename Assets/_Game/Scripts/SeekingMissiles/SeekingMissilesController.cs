@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using _Game.Scripts.SeekingMissiles.Models;
 using Cysharp.Threading.Tasks;
 using LightItUp;
+using LightItUp.Data;
 using LightItUp.Game;
 using LightItUp.UI;
 using UnityEngine;
 
-namespace _Game.Scripts.PowerUp
+namespace _Game.Scripts.SeekingMissiles
 {
     public class SeekingMissilesController : MonoBehaviour
     {
         #region Editor
 
         [SerializeField] private SeekingMissilesModel _missilesModel;
+        [SerializeField] private SeekingMissileModel _defaultMissileModel;
 
         #endregion
 
@@ -28,20 +30,35 @@ namespace _Game.Scripts.PowerUp
 
         #region Methods
 
+        private void Awake()
+        {
+            _uiGame = CanvasController.GetPanel<UI_Game>();
+            InitObjectPool();
+        }
+
+        private void InitObjectPool()
+        {
+            var missiles = _missilesModel.GetSeekingMissiles();
+            if (missiles == null || missiles.Count == 0)
+            {
+                Debug.LogError("[SeekingMissilesController] UseSeekingMissiles() No missiles available.");
+                ObjectPool.Instance.SetSeekingMissilePrefab(_defaultMissileModel.MissilePrefab);
+                return;
+            }
+            ObjectPool.Instance.SetSeekingMissilePrefab(missiles[0].MissilePrefab);
+        }
+        
         public void Init(PlayerController player, List<BlockController> blocks)
         {
             _isUsedOnLevel = false;
             _player = player;
             _blocks = blocks;
-            
-            if(_uiGame == null)
-                _uiGame = CanvasController.GetPanel<UI_Game>();
 
             _uiGame.SeekingMissilesButton.interactable = true;
             _uiGame.SeekingMissilesButton.onClick.AddListener(() => UseSeekingMissiles().Forget());
         }
-        
-        public async UniTaskVoid UseSeekingMissiles()
+
+        private async UniTaskVoid UseSeekingMissiles()
         {
             if (_isUsedOnLevel)
             {
@@ -79,19 +96,20 @@ namespace _Game.Scripts.PowerUp
                 Debug.LogWarning("[SeekingMissilesController] UseSeekingMissiles() No missiles available.");
                 return;
             }
-
+            
             var targetCount = Mathf.Min(missiles.Count, candidates.Count);
             for (var i = 0; i < targetCount && i < missiles.Count; i++)
             {
                 await UniTask.WaitForSeconds(0.2f, cancellationToken: this.GetCancellationTokenOnDestroy());
                 
-                var missile = Instantiate(missiles[i].MissilePrefab, _player.transform);
                 var targetBlock = candidates[i].block;
                 var col = targetBlock.col ? targetBlock.col : targetBlock.GetComponent<Collider2D>();
                 var aimPoint = col ? col.ClosestPoint(_player.transform.position) : (Vector2)targetBlock.transform.position;
-                Debug.Log($"[SeekingMissilesController] UseSeekingMissiles() aimPoint: {aimPoint}");
                 
-                missile.SetData(missiles[i]);
+                var missile = ObjectPool.GetSeekingMissile();
+                missile.transform.position = _player.transform.position;
+                
+                missile.SetData(missiles[i], _player.camFocus);
                 missile.LaunchTowards(aimPoint, targetBlock);
             }
         }

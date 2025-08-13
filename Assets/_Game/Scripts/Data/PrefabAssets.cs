@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using _Game.Scripts.PowerUp;
+using _Game.Scripts.SeekingMissiles;
 using UnityEngine;
 using LightItUp.Game;
 using LightItUp.Singletons;

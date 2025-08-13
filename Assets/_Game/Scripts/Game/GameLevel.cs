@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using _Game.Scripts.PowerUp;
+using _Game.Scripts.SeekingMissiles;
 using HyperCasual.Skins;
 using UnityEngine;
 using LightItUp.Data;
@@ -482,22 +482,6 @@ namespace LightItUp.Game
 					spawnedStars.Add(Instantiate(c, s.position, Quaternion.identity, transform));
 				}
 				player.camFocus.Init();
-			}
-		}
-		
-		public void UseSeekingMissiles()
-		{
-			//TODO: check transaction between class and controller
-			// if(!_isPowerUpFeatureActive)
-			// 	return;
-			//No need if because of null check in SeekingMissilesController
-			if (_seekingMissilesController != null)
-			{
-				_seekingMissilesController.UseSeekingMissiles().Forget();
-			}
-			else
-			{
-				Debug.LogWarning("[GameLevel] UseSeekingMissiles() SeekingMissilesController is not initialized.");
 			}
 		}
 		

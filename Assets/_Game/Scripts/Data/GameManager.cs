@@ -1,5 +1,5 @@
 ﻿using System;
-using _Game.Scripts.PowerUp;
+using _Game.Scripts.SeekingMissiles;
 using HyperCasual;
 using UnityEngine;
 using LightItUp.Game;
@@ -264,13 +264,12 @@ namespace LightItUp.Data
         {
             currentLevel.OnLevelLoaded -= OnLevelLoaded;
 
-            CreateSeekingMissiles();
+            CreateSeekingMissilesController();
         }
         
-        private void CreateSeekingMissiles()
+        private void CreateSeekingMissilesController()
         {
             Debug.Log($"[GameManager] CreateSeekingMissiles()");
-            //TODO: check pooling of missiles
             if(currentLevel == null || !_activeSeekingMissilesFeature )
             {
                 return;
