@@ -45,13 +45,14 @@ namespace _Game.Scripts.Editor
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.PropertyField(prop, true);
 
-                    if (GUILayout.Button("+", GUILayout.Width(25)))
+                    if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Plus"), GUILayout.Width(25), GUILayout.Height(18)))
                     {
                         _target.IncreaseMissilesAmount();
                         SaveChanges();
                     }
 
-                    if (GUILayout.Button("-", GUILayout.Width(25)))
+                    // Small "-" button
+                    if (GUILayout.Button(EditorGUIUtility.IconContent("Toolbar Minus"), GUILayout.Width(25), GUILayout.Height(18)))
                     {
                         _target.DecreaseMissilesAmount();
                         SaveChanges();
