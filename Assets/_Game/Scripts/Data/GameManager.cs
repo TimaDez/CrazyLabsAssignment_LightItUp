@@ -281,7 +281,7 @@ namespace LightItUp.Data
                 return;
             }
             
-            _seekingMissilesController = Instantiate(PrefabAssets.Instance.SeekingMissilesPrefab);
+            _seekingMissilesController = Instantiate(PrefabAssets.Instance.SeekingMissilesControllerPrefab);
             if (_seekingMissilesController == null)
             {
                 Debug.LogWarning("[GameLevel] InitSeekingMissiles() SeekingMissilesController is not initialized.");

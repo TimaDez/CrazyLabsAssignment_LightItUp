@@ -80,13 +80,11 @@ namespace _Game.Scripts.SeekingMissiles
             if (_cameraFocus && _collider) 
                 _cameraFocus.RegisterMissile(_collider);
 
-            // Initialize runtime state
             _target = target;
             _fallbackAimPoint = aimPoint;
             _lifetime = 0f;
             _launched = true;
 
-            // Reset physics
             _rb.velocity = Vector2.zero;
             _rb.angularVelocity = 0f;
 
@@ -101,7 +99,6 @@ namespace _Game.Scripts.SeekingMissiles
 
         private void OnEnable()
         {
-            // Reset lifetime when enabled (useful with pooling)
             _lifetime = 0f;
         }
 
@@ -110,11 +107,9 @@ namespace _Game.Scripts.SeekingMissiles
             if (!_launched || _data == null) 
                 return;
 
-            // Lifetime handling
             _lifetime += Time.deltaTime;
             if (_lifetime >= _data.MaxLifetime)
             {
-                //Destroy(gameObject);
                 ReturnToPool();
             }
         }
@@ -141,7 +136,7 @@ namespace _Game.Scripts.SeekingMissiles
             var steerDir = ApplyAvoidanceIfNeeded(desired);
 
             // Smoothly rotate towards steer direction
-            var currentDir = transform.up; // assuming up is forward
+            var currentDir = transform.up;
             var maxRadians = _data.TurnRateDeg * Mathf.Deg2Rad * Time.fixedDeltaTime;
             var newDir = Vector3.RotateTowards(currentDir, steerDir, maxRadians, 0f);
 
@@ -164,7 +159,7 @@ namespace _Game.Scripts.SeekingMissiles
                 return _fallbackAimPoint;
 
             var cp = col.ClosestPoint(transform.position);
-            _fallbackAimPoint = cp; // keep updating fallback with last closest point
+            _fallbackAimPoint = cp;
             return cp;
         }
 
@@ -191,16 +186,13 @@ namespace _Game.Scripts.SeekingMissiles
 
         private async void OnTriggerEnter2D(Collider2D other)
         {
-            // Only react to blocks
             var block = other.GetComponent<BlockController>();
             if (!block) 
                 return;
 
-            // Ignore already lit blocks (optional)
             if (block.IsLit) 
                 return;
 
-            // Light up the block (adapt to your API)
             block.PlayerHit();
             _hitParticle.Play();
             
@@ -213,10 +205,8 @@ namespace _Game.Scripts.SeekingMissiles
                 blockRb.AddForce(dir * _data.HitForce, _data.HitForceMode);
             }
 
-            // Despawn the missile (replace with pool return if applicable)
-
+            //To see particle effect
             await UniTask.WaitForSeconds(0.2f, cancellationToken: this.GetCancellationTokenOnDestroy());
-            //Destroy(gameObject);
             ReturnToPool();
         }
 
@@ -232,10 +222,8 @@ namespace _Game.Scripts.SeekingMissiles
                 _rb.velocity = Vector2.zero;
         }
         
-        // ----- Pool hooks -----
         public override void OnInitPoolObj()
         {
-            // Called when taken from pool
             gameObject.SetActive(true);
             if (_collider)
                 _collider.enabled = true;
@@ -245,15 +233,12 @@ namespace _Game.Scripts.SeekingMissiles
             _lifetime = 0f;
             _rb.velocity = Vector2.zero;
 
-            // Register to camera so it keeps missile in frame
             if (_cameraFocus && _collider)
                 _cameraFocus.RegisterMissile(_collider);
         }
 
         public override void OnReturnedPoolObj()
         {
-            // Called when returned to pool
-            // Unregister from camera and reset state
             if (_cameraFocus && _collider)
                 _cameraFocus.UnregisterMissile(_collider);
             
@@ -261,7 +246,6 @@ namespace _Game.Scripts.SeekingMissiles
             _target = null;
             _rb.velocity = Vector2.zero;
 
-            // Disable visuals/collider as needed
             if (_collider)
                 _collider.enabled = false;
             
@@ -270,7 +254,6 @@ namespace _Game.Scripts.SeekingMissiles
 
         private void ReturnToPool()
         {
-            // Centralized return
             ObjectPool.ReturnSeekingMissile(this);
         }
         #endregion

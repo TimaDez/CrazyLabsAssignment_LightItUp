@@ -68,8 +68,10 @@ namespace LightItUp.Data
 		public GameObject auraParticles;
 
         [Header("Seeking Missiles")]
-        public SeekingMissilesController SeekingMissilesPrefab;
-        
+        [SerializeField] private SeekingMissilesController _seekingMissilesControllerPrefab;
+
+        public SeekingMissilesController SeekingMissilesControllerPrefab => _seekingMissilesControllerPrefab;
+
         public GameObject ArrowToPrefab(ArrowType type)
         {
             var arrowToPrefab = arrowToPrefabsList.FirstOrDefault(x => x.type == type);

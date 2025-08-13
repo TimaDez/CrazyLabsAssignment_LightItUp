@@ -11,9 +11,21 @@ namespace _Game.Scripts.SeekingMissiles.Models
         [SerializeField] private int _missilesAmount = 3;
         [SerializeField] private SeekingMissileModel[] _missileModels;
 
+        public int MissilesAmount => _missilesAmount;
+
         #endregion
         
         #region Methods
+
+        public void IncreaseMissilesAmount()
+        {
+            _missilesAmount++;
+        }
+
+        public void DecreaseMissilesAmount()
+        {
+            _missilesAmount = Mathf.Max(0, --_missilesAmount);
+        }
         
         public List<SeekingMissileModel> GetSeekingMissiles()
         {

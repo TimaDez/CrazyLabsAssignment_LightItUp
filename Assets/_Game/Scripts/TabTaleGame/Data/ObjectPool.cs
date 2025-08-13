@@ -25,10 +25,7 @@ namespace LightItUp.Data
         public ParticleFXBasic starPickupFXPrefab;
         public ObjectPool<ParticleFXBasic> starPickupFXs;
 
-        
-        // NEW: missile prefab
-        public SeekingMissileBall seekingMissilePrefab; // assign in inspector // NEW: missile pool
-        public ObjectPool<SeekingMissileBall> seekingMissiles;
+        private ObjectPool<SeekingMissileBall> _seekingMissiles;
         
         public void Init() { }
         public override void Awake()
@@ -39,9 +36,6 @@ namespace LightItUp.Data
             celebrationFXs = GetPool(celebrationFXPrefab, 2, transform);
             tutorialTexts = GetPool(tutorialTextPrefab, 4, transform);
             starPickupFXs = GetPool(starPickupFXPrefab, 3, transform);
-            
-            // NEW: init missile pool (start count can be tuned)
-            //seekingMissiles = GetPool(seekingMissilePrefab, 3, transform);
         }
 
         public void SetSeekingMissilePrefab(SeekingMissileBall prefab)
@@ -51,8 +45,7 @@ namespace LightItUp.Data
                 Debug.LogError("ObjectPool instance is not initialized.");
                 return;
             }
-            Instance.seekingMissilePrefab = prefab;
-            Instance.seekingMissiles = Instance.GetPool(prefab, 3, Instance.transform);
+            Instance._seekingMissiles = Instance.GetPool(prefab, 3, Instance.transform);
         }
         
         ObjectPool<T> GetPool<T>(T prefab, int startCount, Transform t) where T : PooledObject
@@ -111,11 +104,11 @@ namespace LightItUp.Data
         // NEW: missiles static API
         public static SeekingMissileBall GetSeekingMissile()
         {
-            return Instance.seekingMissiles.GetObject();
+            return Instance._seekingMissiles.GetObject();
         }
         public static void ReturnSeekingMissile(SeekingMissileBall missile)
         {
-            Instance.seekingMissiles.ReturnObject(missile);
+            Instance._seekingMissiles.ReturnObject(missile);
         }
     }
 

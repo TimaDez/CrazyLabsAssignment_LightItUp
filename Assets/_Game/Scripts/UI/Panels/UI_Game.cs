@@ -158,8 +158,7 @@ namespace LightItUp.UI
 				return;
 			}
 			
-			//TODO: check how to hide button if the feature is not available
-			Debug.Log($"[UI_Game] ShowSeekingMissilesButton() show: {show}");
+			//Debug.Log($"[UI_Game] ShowSeekingMissilesButton() show: {show}");
 			if (show)
 			{
 				_seekingMissilesButton.gameObject.SetActive(true);
@@ -180,7 +179,7 @@ namespace LightItUp.UI
 
 		private void DisableSeekingMissilesButton()
 		{
-			Debug.Log($"[UI_Game] DisableSeekingMissilesButton()");
+			//Debug.Log($"[UI_Game] DisableSeekingMissilesButton()");
 			_seekingMissilesButton.transform.localScale = Vector3.zero;
 			_seekingMissilesButton.gameObject.SetActive(false);
 			_seekingMissilesButton.enabled = false;

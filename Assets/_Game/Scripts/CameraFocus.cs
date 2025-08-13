@@ -101,10 +101,10 @@ namespace LightItUp
         {
             SetCamera(camStartPosition, camStartOrthoSize);
         }
-        
-        // --------- #region Methods: public API for missiles ---------
-        // NEW: register a missile collider to be included in camera rect
-        public void RegisterMissile(Collider2D col) // NEW
+
+        #region Missiles
+
+        public void RegisterMissile(Collider2D col)
         {
             if (col == null)
                 return;
@@ -112,18 +112,18 @@ namespace LightItUp
             if (!_missileTargets.Contains(col))
                 _missileTargets.Add(col);
         }
-
-        // NEW: unregister when missile despawns/disabled
-        public void UnregisterMissile(Collider2D col) // NEW
+        
+        public void UnregisterMissile(Collider2D col)
         {
             if (col == null)
                 return;
             
             _missileTargets.Remove(col);
         }
-        // ------------------------------------------------------------
         
-		public void IgnoreTargetsByDuration(float ignoreDuration)
+        #endregion
+		
+        public void IgnoreTargetsByDuration(float ignoreDuration)
 		{
 			isIgnoringTargets = true;
 			StartCoroutine(WaitFor(ignoreDuration, () => {
