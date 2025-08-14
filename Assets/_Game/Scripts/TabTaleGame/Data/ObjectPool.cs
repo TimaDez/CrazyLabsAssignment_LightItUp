@@ -101,7 +101,6 @@ namespace LightItUp.Data
             Instance.starPickupFXs.ReturnObject(starFX);
         }
         
-        // NEW: missiles static API
         public static SeekingMissileBall GetSeekingMissile()
         {
             return Instance._seekingMissiles.GetObject();
